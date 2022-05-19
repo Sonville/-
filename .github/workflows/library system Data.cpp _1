@@ -1,0 +1,29 @@
+#include"Data.h"
+void setinitData(Data[])
+{
+
+}
+void setloadData(fstream, Data[])
+{
+
+}
+void setshowDate(Data[])
+{
+
+}
+void setsaveData(fstream, Data[])
+{
+
+}
+int  getsearchDate(Data[],int id)
+{
+
+}
+int  getaddData(Data data[],Book book[],int book_id,int index) 
+{
+
+}
+int  getsubData(Data data[],Book book[],int book_id,int index)
+{
+
+}
