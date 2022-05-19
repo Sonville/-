@@ -1,0 +1,26 @@
+#ifndef Data_H
+#define Data_H
+#include<fstream>
+#include<string>
+using namespace std;
+
+class Data
+{
+private:
+	char member_name;
+	int book_num;
+	int book_id;
+public:
+	void setinitData(Data);
+	void setloadData(fstream, Data);
+	void setshowDate(Data);
+	void setsaveData(fstream, Data);
+	int  getsearchDate(Data,int);
+	int  getaddData(Data, Book, int, int);
+	int  getsubData(Data, Book, int, int);
+
+	
+	
+};
+#endif
+
