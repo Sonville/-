@@ -1,0 +1,63 @@
+#include "library.h"
+int main()
+{
+	int n;
+	library a;
+	do
+	{
+		cout <<"********************************************************************" << endl;
+		cout <<"* 1. 存錄書本資訊    2. 顯示書本資訊      3.註冊會員               *" << endl;
+		cout <<"* 4. 顯示會員名單    5. 借閱書籍          6.歸還書籍               *" << endl;
+		cout <<"* 7. 猜數字                                                        *" << endl;
+		cout <<"*  功能持續開發中                                   0. 結束        *" << endl;
+		cout <<"********************************************************************" << endl;
+		cout << "請輸入對應功能的數字: ";
+		cin >> n;
+		switch (n)
+		{
+		case 1:
+			a.EnterBook();
+			break;
+		case 2:
+			a.ShowBook();
+			break;
+		case 3:
+			a.EnterMember();
+			break;
+		case 4:
+			a.ShowMember();
+			break;
+		case 5:
+			a.BorrowBooks();
+			break;
+		case 6:
+			a.ReturnBooks();
+			break;
+		case 7:
+			int i;
+			cout << "小逼!"<<endl;
+			cout << "怎麼了?" << endl;
+			cout << "100~999" << endl;
+			cout << "你最喜歡什麼數字?" << endl;
+			cout << "(沉默...)" << endl;
+			cin >> i;
+			if (i != 520)
+			{
+				cout << "你答錯了!" << endl;
+				n = 0;
+			}
+			else
+			{
+				cout << "(我愛你)" << endl;
+				
+			}
+			break;
+		case 0:
+			break;
+		default:
+			cout << "輸入錯誤" << endl;
+			break;
+		}
+	} while (n != 0);
+	return 0;
+}
